@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Jane Russel",
+    "messageText": "Awesome Setup",
+    "imageURL": "assets/images/userImage1.jpg",
+    "time": "Now"
+  },
+  {
+    "name": "Glady's Murphy",
+    "messageText": "That's Great",
+    "imageURL": "images/userImage2.jpeg",
+    "time": "Yesterday"
+  },
+  {
+    "name": "Jorge Henry",
+    "messageText": "Hey where are you?",
+    "imageURL": "images/userImage3.jpeg",
+    "time": "31 Mar"
+  },
+  {
+    "name": "Philip Fox",
+    "messageText": "Busy! Call me in 20 mins",
+    "imageURL": "images/userImage4.jpeg",
+    "time": "28 Mar"
+  },
+  {
+    "name": "Debra Hawkins",
+    "messageText": "Thankyou, It's awesome",
+    "imageURL": "images/userImage5.jpeg",
+    "time": "23 Mar"
+  },
+  {
+    "name": "Jacob Pena",
+    "messageText": "will update you in evening",
+    "imageURL": "images/userImage6.jpeg",
+    "time": "17 Mar"
+  },
+  {
+    "name": "Andrey Kouakou",
+    "messageText": "Can you please share the file?",
+    "imageURL": "images/userImage7.jpeg",
+    "time": "24 Feb"
+  },
+  {
+    "name": "John Ballo",
+    "messageText": "How are you?",
+    "imageURL": "images/userImage8.jpeg",
+    "time": "18 Feb"
+  },
+  {
+    "name": "Debora Konaté",
+    "messageText": "Thankyou, It's awesome",
+    "imageURL": "images/userImage5.jpeg",
+    "time": "23 Mar"
+  },
+  {
+    "name": "Patricia Kouamé",
+    "messageText": "will update you in evening",
+    "imageURL": "images/userImage6.jpeg",
+    "time": "17 Mar"
+  },
+  {
+    "name": "Joël Donald",
+    "messageText": "Can you please share the file?",
+    "imageURL": "images/userImage7.jpeg",
+    "time": "24 Feb"
+  },
+  {
+    "name": "Mariam Coulibaly",
+    "messageText": "How are you?",
+    "imageURL": "images/userImage8.jpeg",
+    "time": "18 Feb"
+  }
+]
