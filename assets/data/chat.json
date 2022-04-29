@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "name": "Dev Stack",
+    "status": "A full stack developer"
+  },
+  {
+    "id": 1,
+    "name": "Balram",
+    "status": "Flutter Developer..........."
+  },
+  {
+    "id": 2,
+    "name": "Saket",
+    "status": "Web developer..."
+  },
+  {
+    "id": 3,
+    "name": "Bhanu Dev",
+    "status": "A full stack developer"
+  },
+  {
+    "id": 4,
+    "name": "Collins",
+    "status": "Raect developer.."
+  },
+  {
+    "id": 5,
+    "name": "Kishor",
+    "status": "A full stack developer"
+  },
+  {
+    "id": 6,
+    "name": "Testing1",
+    "status": "Full Stack Web"
+  },
+  {
+    "id": 7,
+    "name": "Testing2",
+    "status": "Example work"
+  },
+  {
+    "id": 8,
+    "name": "Helper",
+    "status": "Sharing is caring"
+  },
+  {
+    "id": 9,
+    "name": "Helper",
+    "status": "....."
+  },
+  {
+    "id": 10,
+    "name": "Tester",
+    "status": "I find the bugs"
+  },
+  {
+    "id": 11,
+    "name": "Koné mamadou",
+    "status": "Dev"
+  }
+]
