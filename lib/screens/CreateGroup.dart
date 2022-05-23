@@ -5,10 +5,11 @@ import 'package:chatapp/CustomUI/AvatarCard.dart';
 import 'package:chatapp/CustomUI/ContactCard.dart';
 import 'package:chatapp/models/ChatModel.dart';
 
+import '../models/groupModel.dart';
+import 'homePage.dart';
+
 class CreateGroup extends StatefulWidget {
   const CreateGroup({Key? key}) : super(key: key);
-
-  // get contacts => contacts;
 
   @override
   _CreateGroupState createState() => _CreateGroupState();
@@ -30,7 +31,7 @@ class _CreateGroupState extends State<CreateGroup> {
     ChatModel(id: 11, name: "Koné mamadou", status: "Dev"),
   ];
 
-  List<ChatModel> groups = [];
+  List<groupModel> groups = [];
 
   List<ChatModel> groupmember = [];
 
@@ -67,8 +68,18 @@ class _CreateGroupState extends State<CreateGroup> {
         ],
       ),
       // floatingActionButton: FloatingActionButton(
-      //     backgroundColor: const Color(0xFF128C7E),
-      //     onPressed: () {},
+      //     backgroundColor: Colors.blue,
+      //     onPressed: () {
+      //       if (groupmember.isNotEmpty) {
+      //         groupModel group = groupModel(groupName:"test", members:groupmember);
+      //         groups.add(group);
+      //         print(groups);
+      //         Navigator.push(
+      //             context,
+      //             MaterialPageRoute(builder: (builder) => const HomePage())
+      //         );
+      //       }
+      //     },
       //     child: const Icon(Icons.arrow_forward)),
       body: Stack(
         children: [
@@ -93,7 +104,7 @@ class _CreateGroupState extends State<CreateGroup> {
                     });
                   },
                   child: ContactCard(
-                    contact: contacts[index-1],
+                    contact: contacts[index - 1],
                   ),
                 );
               }),
@@ -101,6 +112,56 @@ class _CreateGroupState extends State<CreateGroup> {
               ? Align(
                   child: Column(
                     children: [
+                      Padding(
+                        padding:
+                            const EdgeInsets.only(top: 10, left: 16, right: 16),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: "Nom du groupe",
+                            hintStyle: TextStyle(color: Colors.grey.shade600),
+                            prefixIcon: Icon(
+                              Icons.search,
+                              color: Colors.grey.shade600,
+                              size: 30,
+                            ),
+                            filled: true,
+                            fillColor: Colors.grey.shade100,
+                            contentPadding: const EdgeInsets.all(8),
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20),
+                                borderSide:
+                                    BorderSide(color: Colors.grey.shade100)),
+                          ),
+                          onSubmitted: (String value) async {
+                            await showDialog<void>(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                  title: const Text('Merci!'),
+                                  content: Text(
+                                      'Groupe "$value", créé'),
+                                  actions: <Widget>[
+                                    TextButton(
+                                      onPressed: () {
+                                        if (groupmember.isNotEmpty) {
+                                          groupModel group = groupModel(groupName:"test", members:groupmember);
+                                          groups.add(group);
+                                          print(groups);
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(builder: (builder) => const HomePage())
+                                          );
+                                        }
+                                      },
+                                      child: const Text('OK'),
+                                    ),
+                                  ],
+                                );
+                              },
+                            );
+                          },
+                        ),
+                      ),
                       Container(
                         height: 75,
                         color: Colors.white,
